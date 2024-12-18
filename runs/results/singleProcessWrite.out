@@ -1,0 +1,459 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Dec 18 17:18:28 2024
+Command line        : /work/z19/z19/lparisi/courses/io/ior_tests/opt/ior/bin/ior -f /mnt/lustre/a2fs-work2/work/z19/z19/lparisi/courses/io/ior_tests/runs/singleProcessWrite.ini
+Machine             : Linux nid001001
+TestID              : 0
+StartTime           : Wed Dec 18 17:18:28 2024
+Path                : testFile_4k.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_4k
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 4096 bytes
+blocksize           : 4096 bytes
+aggregate filesize  : 4096 bytes
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     0.344919   93.47      0.010699    4.00       4.00       0.000372   0.010699   0.000254   0.011325   0   
+write     0.109443   28.44      0.035160    4.00       4.00       0.000231   0.035160   0.000301   0.035692   1   
+write     0.433646   116.65     0.008573    4.00       4.00       0.000225   0.008573   0.000209   0.009008   2   
+write     0.327052   87.50      0.011428    4.00       4.00       0.000240   0.011428   0.000275   0.011944   3   
+write     0.403169   106.76     0.009367    4.00       4.00       0.000218   0.009367   0.000104   0.009689   4   
+write     0.461248   125.89     0.007943    4.00       4.00       0.000225   0.007943   0.000301   0.008469   5   
+write     0.335820   90.09      0.011100    4.00       4.00       0.000216   0.011100   0.000316   0.011632   6   
+write     0.407623   108.03     0.009257    4.00       4.00       0.000219   0.009257   0.000107   0.009583   7   
+write     0.296221   78.34      0.012765    4.00       4.00       0.000235   0.012765   0.000187   0.013187   8   
+write     1.25       364.44     0.002744    4.00       4.00       0.000222   0.002744   0.000159   0.003126   9   
+TestID              : 1
+StartTime           : Wed Dec 18 17:18:28 2024
+Path                : testFile_1m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_1m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 1 MiB
+blocksize           : 1 MiB
+aggregate filesize  : 1 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     100.74     110.27     0.009069    1024.00    1024.00    0.000626   0.009069   0.000232   0.009927   0   
+write     233.59     263.86     0.003790    1024.00    1024.00    0.000281   0.003790   0.000209   0.004281   1   
+write     195.36     216.17     0.004626    1024.00    1024.00    0.000275   0.004626   0.000217   0.005119   2   
+write     131.39     139.39     0.007174    1024.00    1024.00    0.000231   0.007174   0.000206   0.007611   3   
+write     110.64     116.25     0.008602    1024.00    1024.00    0.000233   0.008602   0.000202   0.009038   4   
+write     122.00     129.99     0.007693    1024.00    1024.00    0.000277   0.007693   0.000227   0.008197   5   
+write     184.88     200.88     0.004978    1024.00    1024.00    0.000270   0.004978   0.000160   0.005409   6   
+write     195.55     211.46     0.004729    1024.00    1024.00    0.000281   0.004729   0.000102   0.005114   7   
+write     117.62     123.89     0.008072    1024.00    1024.00    0.000230   0.008072   0.000199   0.008502   8   
+write     125.83     132.35     0.007556    1024.00    1024.00    0.000264   0.007556   0.000127   0.007947   9   
+TestID              : 2
+StartTime           : Wed Dec 18 17:18:28 2024
+Path                : testFile_1m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_1m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 4 MiB
+blocksize           : 4 MiB
+aggregate filesize  : 4 MiB
+
+Results: 
+WARNING: The file "testFile_1m.00000000" exists already and will be deleted
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     155.40     39.78      0.025141    4096       4096       0.000265   0.025141   0.000334   0.025740   0   
+write     208.13     53.38      0.018734    4096       4096       0.000330   0.018734   0.000155   0.019219   1   
+write     276.19     71.96      0.013896    4096       4096       0.000360   0.013896   0.000227   0.014483   2   
+write     400.53     105.99     0.009435    4096       4096       0.000303   0.009435   0.000249   0.009987   3   
+write     372.75     97.70      0.010235    4096       4096       0.000231   0.010235   0.000264   0.010731   4   
+write     413.86     110.07     0.009085    4096       4096       0.000320   0.009085   0.000260   0.009665   5   
+write     278.22     71.91      0.013907    4096       4096       0.000248   0.013907   0.000222   0.014377   6   
+write     312.21     81.23      0.012310    4096       4096       0.000258   0.012310   0.000244   0.012812   7   
+write     406.92     107.88     0.009270    4096       4096       0.000323   0.009270   0.000237   0.009830   8   
+write     293.14     76.44      0.013082    4096       4096       0.000328   0.013082   0.000235   0.013645   9   
+TestID              : 3
+StartTime           : Wed Dec 18 17:18:29 2024
+Path                : testFile_8m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_8m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 8 MiB
+blocksize           : 8 MiB
+aggregate filesize  : 8 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     480.92     61.72      0.016201    8192       8192       0.000259   0.016201   0.000175   0.016635   0   
+write     485.40     62.47      0.016007    8192       8192       0.000279   0.016007   0.000194   0.016481   1   
+write     286.85     36.61      0.027318    8192       8192       0.000325   0.027318   0.000245   0.027889   2   
+write     316.12     40.45      0.024724    8192       8192       0.000366   0.024724   0.000217   0.025307   3   
+write     390.59     50.27      0.019893    8192       8192       0.000328   0.019893   0.000259   0.020482   4   
+write     525.59     69.11      0.014470    8192       8192       0.000512   0.014470   0.000239   0.015221   5   
+write     420.57     54.38      0.018388    8192       8192       0.000318   0.018388   0.000316   0.019022   6   
+write     567.81     74.08      0.013499    8192       8192       0.000395   0.013499   0.000194   0.014089   7   
+write     298.10     37.95      0.026351    8192       8192       0.000273   0.026351   0.000212   0.026837   8   
+write     537.31     69.27      0.014436    8192       8192       0.000276   0.014436   0.000176   0.014889   9   
+TestID              : 4
+StartTime           : Wed Dec 18 17:18:29 2024
+Path                : testFile_16m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_16m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 16 MiB
+blocksize           : 16 MiB
+aggregate filesize  : 16 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     619.60     41.84      0.023902    16384      16384      0.001712   0.023902   0.000208   0.025823   0   
+write     650.17     41.52      0.024085    16384      16384      0.000398   0.024085   0.000125   0.024609   1   
+write     384.19     24.36      0.041057    16384      16384      0.000283   0.041057   0.000305   0.041646   2   
+write     444.47     28.27      0.035376    16384      16384      0.000388   0.035376   0.000233   0.035998   3   
+write     494.13     31.44      0.031806    16384      16384      0.000336   0.031806   0.000237   0.032380   4   
+write     377.32     23.85      0.041929    16384      16384      0.000279   0.041929   0.000194   0.042404   5   
+write     617.33     39.44      0.025357    16384      16384      0.000342   0.025357   0.000219   0.025918   6   
+write     538.30     34.43      0.029047    16384      16384      0.000354   0.029047   0.000321   0.029723   7   
+write     458.51     29.32      0.034103    16384      16384      0.000553   0.034103   0.000239   0.034896   8   
+write     202.65     12.74      0.078470    16384      16384      0.000279   0.078470   0.000202   0.078952   9   
+TestID              : 5
+StartTime           : Wed Dec 18 17:18:29 2024
+Path                : testFile_32m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_32m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 32 MiB
+blocksize           : 32 MiB
+aggregate filesize  : 32 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     586.97     18.56      0.053892    32768      32768      0.000394   0.053892   0.000230   0.054517   0   
+write     588.95     18.63      0.053665    32768      32768      0.000441   0.053665   0.000228   0.054334   1   
+write     417.44     13.15      0.076034    32768      32768      0.000492   0.076034   0.000131   0.076658   2   
+write     626.79     19.85      0.050367    32768      32768      0.000419   0.050367   0.000266   0.051054   3   
+write     397.47     12.52      0.079841    32768      32768      0.000389   0.079841   0.000277   0.080509   4   
+write     527.01     16.65      0.060048    32768      32768      0.000346   0.060048   0.000325   0.060720   5   
+write     483.53     15.25      0.065589    32768      32768      0.000344   0.065589   0.000246   0.066180   6   
+write     533.28     16.83      0.059407    32768      32768      0.000365   0.059407   0.000234   0.060006   7   
+write     485.78     15.34      0.065208    32768      32768      0.000443   0.065208   0.000222   0.065873   8   
+write     513.37     16.19      0.061782    32768      32768      0.000349   0.061782   0.000201   0.062333   9   
+TestID              : 6
+StartTime           : Wed Dec 18 17:18:30 2024
+Path                : testFile_64m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_64m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 64 MiB
+blocksize           : 64 MiB
+aggregate filesize  : 64 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     627.41     9.85       0.101483    65536      65536      0.000314   0.101483   0.000207   0.102006   0   
+write     471.81     7.41       0.135029    65536      65536      0.000357   0.135029   0.000260   0.135648   1   
+write     465.16     7.31       0.136880    65536      65536      0.000447   0.136880   0.000260   0.137588   2   
+write     611.74     9.62       0.103975    65536      65536      0.000354   0.103975   0.000291   0.104620   3   
+write     540.10     8.49       0.117766    65536      65536      0.000404   0.117766   0.000327   0.118497   4   
+write     564.40     8.87       0.112783    65536      65536      0.000369   0.112783   0.000240   0.113394   5   
+write     535.71     8.43       0.118631    65536      65536      0.000535   0.118631   0.000301   0.119467   6   
+write     512.19     8.05       0.124283    65536      65536      0.000451   0.124283   0.000219   0.124953   7   
+write     690.56     10.87      0.092012    65536      65536      0.000412   0.092012   0.000253   0.092678   8   
+write     528.53     8.31       0.120399    65536      65536      0.000434   0.120399   0.000257   0.121091   9   
+TestID              : 7
+StartTime           : Wed Dec 18 17:18:32 2024
+Path                : testFile_128m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_128m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 128 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 128 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     651.73     5.12       0.195378    131072     131072     0.000754   0.195378   0.000265   0.196399   0   
+write     60.28      0.471080   2.12        131072     131072     0.000392   2.12       0.000256   2.12       1   
+write     765.13     6.01       0.166311    131072     131072     0.000626   0.166311   0.000354   0.167292   2   
+write     754.47     5.91       0.169114    131072     131072     0.000406   0.169114   0.000135   0.169655   3   
+write     735.83     5.78       0.173146    131072     131072     0.000425   0.173146   0.000381   0.173953   4   
+write     617.11     4.84       0.206640    131072     131072     0.000439   0.206640   0.000338   0.207419   5   
+write     774.62     6.07       0.164734    131072     131072     0.000370   0.164734   0.000139   0.165243   6   
+write     736.71     5.78       0.173145    131072     131072     0.000471   0.173145   0.000129   0.173746   7   
+write     668.62     5.25       0.190587    131072     131072     0.000477   0.190587   0.000376   0.191440   8   
+write     694.59     5.45       0.183568    131072     131072     0.000447   0.183568   0.000266   0.184281   9   
+TestID              : 8
+StartTime           : Wed Dec 18 17:18:36 2024
+Path                : testFile_256m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_256m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 256 MiB
+blocksize           : 256 MiB
+aggregate filesize  : 256 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     762.87     3.00       0.333028    262144     262144     0.002414   0.333028   0.000134   0.335577   0   
+write     761.80     2.98       0.335379    262144     262144     0.000424   0.335379   0.000242   0.336045   1   
+write     797.83     3.12       0.320123    262144     262144     0.000414   0.320123   0.000330   0.320869   2   
+write     758.95     2.97       0.336716    262144     262144     0.000461   0.336716   0.000129   0.337307   3   
+write     773.73     3.03       0.330260    262144     262144     0.000386   0.330260   0.000216   0.330863   4   
+write     788.50     3.09       0.324010    262144     262144     0.000448   0.324010   0.000207   0.324665   5   
+write     739.74     2.89       0.345524    262144     262144     0.000393   0.345524   0.000148   0.346066   6   
+write     818.37     3.20       0.312066    262144     262144     0.000392   0.312066   0.000355   0.312815   7   
+write     797.89     3.12       0.320079    262144     262144     0.000564   0.320079   0.000204   0.320848   8   
+write     771.54     3.02       0.331132    262144     262144     0.000368   0.331132   0.000306   0.331806   9   
+TestID              : 9
+StartTime           : Wed Dec 18 17:18:40 2024
+Path                : testFile_512m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_512m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 512 MiB
+blocksize           : 512 MiB
+aggregate filesize  : 512 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     795.09     1.55       0.643423    524288     524288     0.000344   0.643423   0.000186   0.643953   0   
+write     809.92     1.58       0.631425    524288     524288     0.000525   0.631425   0.000214   0.632164   1   
+write     835.48     1.63       0.612066    524288     524288     0.000465   0.612066   0.000289   0.612821   2   
+write     816.61     1.60       0.626224    524288     524288     0.000434   0.626224   0.000326   0.626984   3   
+write     806.65     1.58       0.633046    524288     524288     0.001422   0.633046   0.000257   0.634726   4   
+write     825.04     1.61       0.619867    524288     524288     0.000424   0.619867   0.000282   0.620574   5   
+write     808.11     1.58       0.632857    524288     524288     0.000449   0.632857   0.000268   0.633575   6   
+write     799.95     1.56       0.639372    524288     524288     0.000422   0.639372   0.000245   0.640040   7   
+write     799.44     1.56       0.639648    524288     524288     0.000434   0.639648   0.000367   0.640449   8   
+write     816.95     1.60       0.626081    524288     524288     0.000395   0.626081   0.000249   0.626725   9   
+TestID              : 10
+StartTime           : Wed Dec 18 17:18:49 2024
+Path                : testFile_1G.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_1G
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 1 GiB
+blocksize           : 1 GiB
+aggregate filesize  : 1 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     816.08     0.797432   1.25        1048576    1048576    0.000331   1.25       0.000426   1.25       0   
+write     834.45     0.815364   1.23        1048576    1048576    0.000389   1.23       0.000312   1.23       1   
+write     854.64     0.835035   1.20        1048576    1048576    0.000478   1.20       0.000139   1.20       2   
+write     821.68     0.803053   1.25        1048576    1048576    0.000679   1.25       0.000297   1.25       3   
+write     828.80     0.809831   1.23        1048576    1048576    0.000389   1.23       0.000312   1.24       4   
+write     847.36     0.827966   1.21        1048576    1048576    0.000449   1.21       0.000233   1.21       5   
+write     839.76     0.820549   1.22        1048576    1048576    0.000482   1.22       0.000218   1.22       6   
+write     821.14     0.802456   1.25        1048576    1048576    0.000492   1.25       0.000385   1.25       7   
+write     817.04     0.798421   1.25        1048576    1048576    0.000486   1.25       0.000346   1.25       8   
+write     842.03     0.822931   1.22        1048576    1048576    0.000648   1.22       0.000289   1.22       9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write           1.25       0.11       0.44       0.29     319.91      28.02     111.84      73.35    0.01237         NA            NA     0      1   1   10   1     0        1         0    0      1     4096     4096       0.0 POSIX      0
+write         233.59     100.74     151.76      43.64     233.59     100.74     151.76      43.64    0.00711         NA            NA     1      1   1   10   1     0        1         0    0      1  1048576  1048576       1.0 POSIX      0
+write         413.86     155.40     311.73      83.07     103.47      38.85      77.93      20.77    0.01405         NA            NA     2      1   1   10   1     0        1         0    0      1  4194304  4194304       4.0 POSIX      0
+write         567.81     286.85     430.92      98.89      70.98      35.86      53.87      12.36    0.01969         NA            NA     3      1   1   10   1     0        1         0    0      1  8388608  8388608       8.0 POSIX      0
+write         650.17     202.65     478.67     130.10      40.64      12.67      29.92       8.13    0.03723         NA            NA     4      1   1   10   1     0        1         0    0      1 16777216 16777216      16.0 POSIX      0
+write         626.79     397.47     516.06      69.85      19.59      12.42      16.13       2.18    0.06322         NA            NA     5      1   1   10   1     0        1         0    0      1 33554432 33554432      32.0 POSIX      0
+write         690.56     465.16     554.76      67.12      10.79       7.27       8.67       1.05    0.11699         NA            NA     6      1   1   10   1     0        1         0    0      1 67108864 67108864      64.0 POSIX      0
+write         774.62      60.28     645.91     201.40       6.05       0.47       5.05       1.57    0.37529         NA            NA     7      1   1   10   1     0        1         0    0      1 134217728 134217728     128.0 POSIX      0
+write         818.37     739.74     777.12      22.13       3.20       2.89       3.04       0.09    0.32969         NA            NA     8      1   1   10   1     0        1         0    0      1 268435456 268435456     256.0 POSIX      0
+write         835.48     795.09     811.32      11.83       1.63       1.55       1.58       0.02    0.63120         NA            NA     9      1   1   10   1     0        1         0    0      1 536870912 536870912     512.0 POSIX      0
+write         854.64     816.08     832.30      12.75       0.83       0.80       0.81       0.01    1.23062         NA            NA    10      1   1   10   1     0        1         0    0      1 1073741824 1073741824    1024.0 POSIX      0
+Finished            : Wed Dec 18 17:19:05 2024

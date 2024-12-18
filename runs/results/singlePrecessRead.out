@@ -1,0 +1,362 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Dec 18 17:22:55 2024
+Command line        : /work/z19/z19/lparisi/courses/io/ior_tests/opt/ior/bin/ior -f /mnt/lustre/a2fs-work2/work/z19/z19/lparisi/courses/io/ior_tests/runs/singleProcessWrite.ini
+Machine             : Linux nid002016
+TestID              : 0
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_4k.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_4k
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 4096 bytes
+blocksize           : 4096 bytes
+aggregate filesize  : 4096 bytes
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      0.751629   212.23     0.004712    4.00       4.00       0.000282   0.004712   0.000203   0.005197   0   
+TestID              : 1
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_1m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_1m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 1 MiB
+blocksize           : 1 MiB
+aggregate filesize  : 1 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 1048576
+WARNING: Stat() of aggregate file size      = 4194304
+WARNING: Using actual aggregate bytes moved = 1048576
+read      33.07      33.49      0.029862    1024.00    1024.00    0.000232   0.029862   0.000148   0.030242   0   
+TestID              : 2
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_1m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_1m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 4 MiB
+blocksize           : 4 MiB
+aggregate filesize  : 4 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      811.04     209.29     0.004778    4096       4096       0.000147   0.004778   0.000007   0.004932   0   
+TestID              : 3
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_8m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_8m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 8 MiB
+blocksize           : 8 MiB
+aggregate filesize  : 8 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      196.96     24.97      0.040051    8192       8192       0.000268   0.040051   0.000299   0.040618   0   
+TestID              : 4
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_16m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_16m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 16 MiB
+blocksize           : 16 MiB
+aggregate filesize  : 16 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      43.78      2.74       0.364747    16384      16384      0.000469   0.364747   0.000279   0.365496   0   
+TestID              : 5
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_32m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_32m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 32 MiB
+blocksize           : 32 MiB
+aggregate filesize  : 32 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      450.30     14.24      0.070247    32768      32768      0.000510   0.070247   0.000306   0.071063   0   
+TestID              : 6
+StartTime           : Wed Dec 18 17:22:55 2024
+Path                : testFile_64m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_64m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 64 MiB
+blocksize           : 64 MiB
+aggregate filesize  : 64 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      696.64     10.98      0.091115    65536      65536      0.000414   0.091115   0.000341   0.091870   0   
+TestID              : 7
+StartTime           : Wed Dec 18 17:22:56 2024
+Path                : testFile_128m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_128m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 128 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 128 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      852.74     6.70       0.149314    131072     131072     0.000425   0.149314   0.000365   0.150105   0   
+TestID              : 8
+StartTime           : Wed Dec 18 17:22:56 2024
+Path                : testFile_256m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_256m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 256 MiB
+blocksize           : 256 MiB
+aggregate filesize  : 256 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      866.12     3.39       0.294787    262144     262144     0.000419   0.294787   0.000364   0.295570   0   
+TestID              : 9
+StartTime           : Wed Dec 18 17:22:56 2024
+Path                : testFile_512m.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_512m
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 512 MiB
+blocksize           : 512 MiB
+aggregate filesize  : 512 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      867.65     1.70       0.589347    524288     524288     0.000395   0.589347   0.000359   0.590102   0   
+TestID              : 10
+StartTime           : Wed Dec 18 17:22:57 2024
+Path                : testFile_1G.00000000
+FS                  : 73.2 TiB   Used FS: 63.4%   Inodes: 3370.5 Mi   Used Inodes: 3.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile_1G
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 1
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 1 GiB
+blocksize           : 1 GiB
+aggregate filesize  : 1 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+read      987.33     0.964918   1.04        1048576    1048576    0.000468   1.04       0.000314   1.04       0   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+read            0.75       0.75       0.75       0.00     192.42     192.42     192.42       0.00    0.00520         NA            NA     0      1   1    1   1     0        1         0    0      1     4096     4096       0.0 POSIX      0
+read           33.07      33.07      33.07       0.00      33.07      33.07      33.07       0.00    0.03024         NA            NA     1      1   1    1   1     0        1         0    0      1  1048576  1048576       1.0 POSIX      0
+read          811.04     811.04     811.04       0.00     202.76     202.76     202.76       0.00    0.00493         NA            NA     2      1   1    1   1     0        1         0    0      1  4194304  4194304       4.0 POSIX      0
+read          196.96     196.96     196.96       0.00      24.62      24.62      24.62       0.00    0.04062         NA            NA     3      1   1    1   1     0        1         0    0      1  8388608  8388608       8.0 POSIX      0
+read           43.78      43.78      43.78       0.00       2.74       2.74       2.74       0.00    0.36550         NA            NA     4      1   1    1   1     0        1         0    0      1 16777216 16777216      16.0 POSIX      0
+read          450.30     450.30     450.30       0.00      14.07      14.07      14.07       0.00    0.07106         NA            NA     5      1   1    1   1     0        1         0    0      1 33554432 33554432      32.0 POSIX      0
+read          696.64     696.64     696.64       0.00      10.88      10.88      10.88       0.00    0.09187         NA            NA     6      1   1    1   1     0        1         0    0      1 67108864 67108864      64.0 POSIX      0
+read          852.74     852.74     852.74       0.00       6.66       6.66       6.66       0.00    0.15010         NA            NA     7      1   1    1   1     0        1         0    0      1 134217728 134217728     128.0 POSIX      0
+read          866.12     866.12     866.12       0.00       3.38       3.38       3.38       0.00    0.29557         NA            NA     8      1   1    1   1     0        1         0    0      1 268435456 268435456     256.0 POSIX      0
+read          867.65     867.65     867.65       0.00       1.69       1.69       1.69       0.00    0.59010         NA            NA     9      1   1    1   1     0        1         0    0      1 536870912 536870912     512.0 POSIX      0
+read          987.33     987.33     987.33       0.00       0.96       0.96       0.96       0.00    1.03714         NA            NA    10      1   1    1   1     0        1         0    0      1 1073741824 1073741824    1024.0 POSIX      0
+Finished            : Wed Dec 18 17:22:58 2024
